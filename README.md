@@ -159,6 +159,7 @@ mvn spring-boot:run
 ```
 Or
 ``Run TasteNetApplication.java`` at path - ``TasteNet/Backend/tastenet/src/main/java/com/tastenet``<br>
+
 2. Access the application at http://localhost:8080.
 # Production Deployment
 1. Build for production:
