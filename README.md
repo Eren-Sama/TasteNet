@@ -10,3 +10,5 @@ TasteNet is a community-driven review platform for hotels, cafes, and restaurant
 Whether you're looking for the best brunch spot or planning a special night out, TasteNet connects you with the best dining options and ensures you never miss out on a great meal!
 
 Contribute to the project or explore the code to see how you can enhance the TasteNet experience!
+
+# Features
