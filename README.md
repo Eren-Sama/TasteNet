@@ -156,7 +156,7 @@ mvn clean install
 mvn spring-boot:run
 ```
 Or
-``Run TasteNetApplication.java`` at path - > TasteNet/Backend/tastenet/src/main/java/com/tastenet
+``Run TasteNetApplication.java`` at path - ``TasteNet/Backend/tastenet/src/main/java/com/tastenet``
 2. Access the application at http://localhost:8080.
 # Production Deployment
 1. Build for production:
@@ -164,3 +164,11 @@ Or
 mvn clean package
 ```
 2. Deploy the generated JAR/WAR file to your production server.
+
+# Testing 🧪
+● Run the tests using:
+```mvn test```
+
+Contact 📧
+Eklavya Mohan Agrawal - @Eren-Sama
+Project Link - https://github.com/Eren-Sama/TasteNet
