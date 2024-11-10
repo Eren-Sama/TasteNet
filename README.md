@@ -161,7 +161,7 @@ Or
 ``Run TasteNetApplication.java`` at path - ``TasteNet/Backend/tastenet/src/main/java/com/tastenet``<br>
 
 2. Access the application at http://localhost:8080.
-# Production Deployment
+### Production Deployment
 1. Build for production:
 ```bash
 mvn clean package
