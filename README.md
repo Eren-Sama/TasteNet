@@ -111,7 +111,7 @@ TasteNet/
 ```
 
 # Database Configuration 🗄️
-## MySQL Setup
+### MySQL Setup
 1. Create the database:
 ```
 CREATE DATABASE tastenet_db;
