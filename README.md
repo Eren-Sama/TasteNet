@@ -123,13 +123,13 @@ USE tastenet_db;
 3. Copy or Use the SQL file provided in Database folder
 
 # Installation and Setup 🚀
-## Prerequisites
+### Prerequisites
 1. Install JDK 11
 2. Install Maven
 3. Install MySQL 8.0
 4. Install your preferred IDE (IntelliJ IDEA or Eclipse)
 
-## Steps
+### Steps
 1. Clone the repository:
 ```
 git clone https://github.com/Eren-Sama/TasteNet.git
@@ -152,7 +152,7 @@ spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.MySQLDialect
 mvn clean install
 ```
 # Running the Project ▶️
-## Development
+### Development
 1. Run the Spring Boot application:
 ```
 mvn spring-boot:run
