@@ -169,8 +169,10 @@ mvn clean package
 
 # Testing 🧪
 ● Run the tests using:
-```mvn test```
+```bash
+mvn test
+```
 
-Contact 📧
-Eklavya Mohan Agrawal - @Eren-Sama
+#Contact 📧
+Eklavya Mohan Agrawal - @Eren-Sama<br>
 Project Link - https://github.com/Eren-Sama/TasteNet
