@@ -149,3 +149,18 @@ spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.MySQLDialect
 ```
 mvn clean install
 ```
+# Running the Project ▶️
+## Development
+1. Run the Spring Boot application:
+```
+mvn spring-boot:run
+```
+Or
+``Run TasteNetApplication.java`` at path - > TasteNet/Backend/tastenet/src/main/java/com/tastenet
+2. Access the application at http://localhost:8080.
+# Production Deployment
+1. Build for production:
+```
+mvn clean package
+```
+2. Deploy the generated JAR/WAR file to your production server.
