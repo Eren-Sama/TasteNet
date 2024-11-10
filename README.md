@@ -73,7 +73,7 @@ TasteNet/
 ```
 
 # Dependencies 📚
-```
+```xml
 <dependencies>
 		<dependency>
             <groupId>jakarta.persistence</groupId>
@@ -113,11 +113,11 @@ TasteNet/
 # Database Configuration 🗄️
 ### MySQL Setup
 1. Create the database:
-```
+```sql
 CREATE DATABASE tastenet_db;
 ```
 2. Now Use the newly created database:
-```
+```sql
 USE tastenet_db;
 ```
 3. Copy or Use the SQL file provided in Database folder
@@ -131,11 +131,11 @@ USE tastenet_db;
 
 ### Steps
 1. Clone the repository:
-```
+```bash
 git clone https://github.com/Eren-Sama/TasteNet.git
 ```
 2. Configure database connection in ``TasteNet/Backend/tastenet/src/main/resources/application.properties``
-```
+```bash
 spring.application.name=TasteNet
 spring.security.user.name=Your Username
 spring.security.user.password=Your Password
@@ -148,7 +148,7 @@ spring.jpa.show-sql=true
 spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.MySQLDialect
 ```
 3. Build the project:
-```
+```bash
 mvn clean install
 ```
 # Running the Project ▶️
@@ -162,7 +162,7 @@ Or
 2. Access the application at http://localhost:8080.
 # Production Deployment
 1. Build for production:
-```
+```bash
 mvn clean package
 ```
 2. Deploy the generated JAR/WAR file to your production server.
