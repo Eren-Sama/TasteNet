@@ -43,7 +43,8 @@ Contribute to the project or explore the code to see how you can enhance the Tas
 ● Git
 
 # Project Structure 📂
-'''TasteNet/
+'''
+TasteNet/
 ├── backend/
 │   ├── src/
 │   │   ├── main/
