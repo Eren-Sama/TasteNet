@@ -115,10 +115,12 @@ TasteNet/
 1. Create the database:
 ```
 CREATE DATABASE tastenet_db;
--- Use the newly created database
+```
+2. Now Use the newly created database:
+```
 USE tastenet_db;
 ```
-2. Copy or Use the SQL file provided in Database folder
+3. Copy or Use the SQL file provided in Database folder
 
 # Installation and Setup 🚀
 ## Prerequisites
