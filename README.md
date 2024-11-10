@@ -43,32 +43,7 @@ Contribute to the project or explore the code to see how you can enhance the Tas
 ● Git
 
 # Project Structure 📂
-TasteNet/
-├── backend/
-│   ├── src/
-│   │   ├── main/
-│   │   │   ├── java/
-│   │   │   │   └── com/
-│   │   │   │       └── tastenet/
-│   │   │   │           ├── controller/
-│   │   │   │           │   ├── UserController.java
-│   │   │   │           │   └── AdminController.java
-│   │   │   │           ├── model/
-│   │   │   │           │   ├── User.java
-│   │   │   │           │   └── BusinessVerificationRequest.java
-│   │   │   │           ├── repository/
-│   │   │   │           │   ├── UserRepository.java
-│   │   │   │           │   └── BusinessVerificationRequestRepository.java
-│   │   │   │           ├── service/
-│   │   │   │           │   ├── UserService.java
-│   │   │   │           │   └── BusinessService.java
-│   │   │   │           └── util/
-│   │   │   │               └── SecurityConfig.java
-│   │   ├── resources/
-│   │   │   └── application.properties
-│   └── pom.xml
-├── database/
-│   └── tastenet_db.sql
+TasteNet/ ├── backend/ │ ├── src/ │ │ ├── main/ │ │ │ ├── java/ │ │ │ │ └── com/ │ │ │ │ └── tastenet/ │ │ │ │ ├── controller/ │ │ │ │ │ ├── UserController.java │ │ │ │ │ └── AdminController.java │ │ │ │ ├── model/ │ │ │ │ │ ├── User.java │ │ │ │ │ └── BusinessVerificationRequest.java │ │ │ │ ├── repository/ │ │ │ │ │ ├── UserRepository.java │ │ │ │ │ └── BusinessVerificationRequestRepository.java │ │ │ │ ├── service/ │ │ │ │ │ ├── UserService.java │ │ │ │ │ └── BusinessService.java │ │ │ │ └── util/ │ │ │ │ └── SecurityConfig.java │ │ ├── resources/ │ │ │ ├── application.properties │ │ │ └── data.sql │ │ └── webapp/ │ │ └── WEB-INF/ │ ├── test/ │ │ └── java/ │ └── pom.xml ├── database/ │ └── schema.sql
 
 
 
