@@ -35,16 +35,11 @@ Contribute to the project or explore the code to see how you can enhance the Tas
 5. Community Engagement (Events, Forums)
 
 # Technical Requirements 🛠️
-● JDK 11
-
+● JDK 11<br>
 ● Apache Maven 3.8 or higher
-
 ● MySQL 8.0
-
 ● Spring Boot 3.4.0
-
 ● IntelliJ IDEA or Eclipse IDE or VS Code
-
 ● Git
 
 # Project Structure 📂
