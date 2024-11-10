@@ -118,5 +118,34 @@ CREATE DATABASE tastenet_db;
 -- Use the newly created database
 USE tastenet_db;
 ```
+2. Copy or Use the SQL file provided in Database folder
 
+# Installation and Setup 🚀
+## Prerequisites
+1. Install JDK 11
+2. Install Maven
+3. Install MySQL 8.0
+4. Install your preferred IDE (IntelliJ IDEA or Eclipse)
 
+## Steps
+1. Clone the repository:
+```
+git clone https://github.com/Eren-Sama/TasteNet.git
+```
+2. Configure database connection in ``TasteNet/Backend/tastenet/src/main/resources/application.properties``
+```
+spring.application.name=TasteNet
+spring.security.user.name=Your Username
+spring.security.user.password=Your Password
+spring.datasource.url=jdbc:mysql://localhost:3306/tastenet_db
+spring.datasource.username=root
+spring.datasource.password=Your SQL Password
+spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
+spring.jpa.hibernate.ddl-auto=update
+spring.jpa.show-sql=true
+spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.MySQLDialect
+```
+3. Build the project:
+```
+mvn clean install
+```
