@@ -43,7 +43,8 @@ Contribute to the project or explore the code to see how you can enhance the Tas
 ● Git
 
 # Project Structure 📂
-'''TasteNet/
+'''plaintext
+TasteNet/
 ├── backend/
 │   ├── src/
 │   │   ├── main/
@@ -68,7 +69,7 @@ Contribute to the project or explore the code to see how you can enhance the Tas
 │   │   │   └── application.properties
 │   └── pom.xml
 ├── database/
-│   └── tastenet_db.sql'''
+│   └── tastenet_db.sql
 
 
 
