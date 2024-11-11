@@ -44,3 +44,5 @@ INSERT INTO users (email, password) VALUES ('testuser@example.com', 'password123
 
 -- Link a user with a role (make sure the user_id and role_id are correct)
 INSERT INTO user_roles (user_id, role_id) VALUES (1, 1);  -- Adjust user_id as necessary
+
+

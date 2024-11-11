@@ -66,9 +66,9 @@ public class UserController {
                 businessAdmin.setAadharNumber((String) requestBody.get("aadharNumber"));
 
                 // Decode the Base64 string for business documents if provided
-                if (requestBody.containsKey("businessDocuments")) {
+                if (requestBody.containsKey("businessDocuments") && requestBody.get("businessDocuments") != null) {
                     String base64Document = (String) requestBody.get("businessDocuments");
-
+                
                     try {
                         // Attempt to decode the Base64 document
                         byte[] decodedDocument = Base64.getDecoder().decode(base64Document);
@@ -78,7 +78,12 @@ public class UserController {
                         System.out.println("Invalid Base64 string, treating as URL: " + base64Document);
                         businessAdmin.setBusinessDocumentsUrl(base64Document);  // Save URL if decoding fails
                     }
+                } else if (requestBody.containsKey("businessDocumentsUrl") && requestBody.get("businessDocumentsUrl") != null) {
+                    // Handle the case where only the businessDocumentsUrl is provided
+                    String documentUrl = (String) requestBody.get("businessDocumentsUrl");
+                    businessAdmin.setBusinessDocumentsUrl(documentUrl);  // Save URL if provided
                 }
+                
 
                 // Register business admin
                 BusinessAdmin newBusinessAdmin = userService.registerBusinessAdmin(businessAdmin);
