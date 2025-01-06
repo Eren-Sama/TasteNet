@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Details - TasteNet</title>
+    <link rel="stylesheet" href="restaurant-detail.css">
+    <script defer src="restaurant-detail.js"></script>
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo"><a href="index.html">TasteNet</a></div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="reviews.html">Reviews</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <a href="login.html" class="login-btn">Login</a>
+    </header>
+
+    <section class="restaurant-detail">
+        <div class="restaurant-info">
+            <h1 id="restaurant-name">Restaurant Name</h1>
+            <img id="restaurant-image" src="restaurant1.jpg" alt="Restaurant Image">
+            <p id="restaurant-description">Loading description...</p>
+            <p><strong>Location:</strong> <span id="restaurant-location">Loading...</span></p>
+            <p><strong>Contact:</strong> <span id="restaurant-contact">Loading...</span></p>
+            <p><strong>Timings:</strong> <span id="restaurant-timings">Loading...</span></p>
+            <p><strong>Cuisine:</strong> <span id="restaurant-cuisine">Loading...</span></p>
+        </div>
+        
+        <section id="reviews-section">
+            <h2>Customer Reviews</h2>
+            <div id="reviews-list">
+                <!-- Reviews will be inserted dynamically by JavaScript -->
+            </div>
+        </section>
+        
+        <section id="add-review">
+            <h3>Leave a Review</h3>
+            <form id="review-form">
+                <textarea id="review-text" placeholder="Write your review..." required></textarea>
+                <button type="submit">Submit Review</button>
+            </form>
+        </section>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2024 TasteNet. All rights reserved.</p>
+    </footer>
+</body>
+</html>

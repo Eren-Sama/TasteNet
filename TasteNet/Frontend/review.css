@@ -1,0 +1,161 @@
+/* Reset margin and padding for all elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and background styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #fafafa; /* Updated to match home page background */
+    color: #333;
+}
+
+/* Navbar styling */
+.navbar {
+    background-color: #272343; /* Same as home page */
+    padding: 1.5rem 2rem; /* Same padding as home page */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    border-bottom: 4px solid #66c7ff; /* Same border as home page */
+    animation: fadeIn 1s ease-in-out;
+}
+
+.navbar .logo a {
+    font-size: 2rem;
+    text-decoration: none;
+    color: #ffd803; /* Same logo color as home page */
+    font-weight: bold;
+}
+
+.navbar nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 15px;
+}
+
+.navbar nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+}
+
+.navbar .login-btn {
+    background-color: #ffd803;
+    padding: 8px 15px;
+    border-radius: 5px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.navbar .login-btn:hover {
+    background-color: #e68900;
+}
+
+/* Hero section */
+.hero {
+    background: rgba(39, 35, 67, 0.8); /* Updated for consistency with home page */
+    padding: 5rem 2rem;
+    text-align: center;
+    color: white;
+    background-image: url('hero-pattern.jpg'); /* Same hero image */
+    background-size: cover;
+    background-position: center;
+    animation: slideIn 1.2s ease-out;
+}
+
+.hero h1 {
+    font-size: 3.5rem;
+    color: #ffd803;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    color: #fff;
+}
+
+/* Review Section */
+.reviews {
+    padding: 4rem 2rem;
+    background-color: white;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.reviews h2 {
+    font-size: 2.5rem;
+    text-align: center;
+    color: #272343;
+    margin-bottom: 30px;
+}
+
+/* Review Cards Layout */
+.review-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 10px;
+}
+
+/* Individual review card */
+.review-card {
+    background-color: rgba(255, 255, 255, 0.8); /* Slight opacity for overlay effect */
+    border: 1px solid #ffd803;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease; /* Only zoom-in effect on hover */
+}
+
+/* Title Styling for Review Cards */
+.review-card h3 {
+    font-size: 20px;
+    color: #272343;
+    margin: 15px 0;
+}
+
+/* Review Text */
+.review-card .review-text {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+/* Author Styling */
+.review-card .review-author {
+    font-size: 14px;
+    color: #888;
+    font-style: italic;
+}
+
+/* Zoom-in effect on hover */
+.review-card:hover {
+    transform: scale(1.05); /* Slight zoom-in effect */
+}
+
+/* Footer styling */
+.footer {
+    background-color: #272343; /* Same as navbar */
+    color: white;
+    text-align: center;
+    padding: 20px;
+    border-top: 4px solid #66c7ff; /* Same border as navbar */
+}
+
+/* Smooth Animations */
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+@keyframes slideIn {
+    0% { transform: translateY(100%); }
+    100% { transform: translateY(0); }
+}

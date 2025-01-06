@@ -1,0 +1,214 @@
+/* General Reset */
+.body {
+    color: #2f2f2f;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 2rem;
+    background-color: #2f2f2f;
+    color: #fff;
+    border-bottom: 4px solid #66c7ff;
+    animation: fadeIn 1s ease-out; /* Added fadeIn animation */
+}
+
+.navbar .logo a {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #66c7ff;
+    text-decoration: none;
+    animation: slideInLeft 1s ease-out; /* Slide-in animation for logo */
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin: 0 1.5rem;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #66c7ff;
+}
+
+.login-btn {
+    padding: 0.5rem 1rem;
+    background-color: #66c7ff;
+    color: #2f2f2f;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    animation: bounce 2s infinite; /* Bounce animation for the button */
+}
+
+/* Contact Section */
+.contact {
+    padding: 4rem 2rem;
+    background-color: #3f3f3f;
+    color: #e0e0e0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    width: 100%;
+    text-align: center;
+    animation: fadeIn 1.5s ease-out; /* FadeIn animation for contact section */
+}
+
+.contact h2 {
+    font-size: 3.5rem;
+    color: #66c7ff;
+    margin-bottom: 0;
+    animation: fadeInUp 1.5s ease-out; /* Animation for heading */
+}
+
+.intro {
+    font-size: 1.4rem;
+    margin-bottom: 1.5rem;
+    animation: fadeInUp 1.7s ease-out; /* Animation for intro text */
+}
+
+.contact-details {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    width: 100%;
+    max-width: 1200px;
+    animation: fadeInUp 1.9s ease-out; /* Animation for contact details */
+}
+
+.emails, .social-media {
+    background: #4a4a4a;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    flex: 1;
+    min-width: 300px;
+    border: 1px solid #666;
+    animation: fadeInUp 2s ease-out; /* Animation for cards */
+}
+
+.emails a {
+    color: #f8e71c;
+    text-decoration: none;
+    font-size: 1.3rem;
+    transition: color 0.3s ease;
+}
+
+.emails a:hover {
+    color: #f8e71c;
+}
+
+.social-media a {
+    color: #fc8f5c;
+    text-decoration: none;
+    font-size: 1.3rem;
+    transition: color 0.3s ease;
+}
+
+.social-media a:hover {
+    color: #66b2ff;
+}
+
+h3 {
+    color: #66c7ff;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    animation: fadeInUp 2.2s ease-out; /* Animation for sub-headings */
+}
+
+/* Team Section */
+.team {
+    margin-top: 2rem;
+}
+
+.team-card {
+    background: #4a4a4a;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto;
+    border: 1px solid #666;
+    animation: fadeInUp 2.3s ease-out; /* Animation for team card */
+}
+
+.team-card h3 {
+    font-size: 2.5rem;
+    color: #66c7ff;
+    margin-bottom: 1.5rem;
+}
+
+.team-card ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.team-card li {
+    font-size: 1.2rem;
+    color: #b0c7d1;
+    margin-bottom: 0.8rem;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #2f2f2f;
+    color: #fff;
+    border-top: 4px solid #66c7ff;
+    animation: fadeInUp 2.5s ease-out; /* Animation for footer */
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+    .contact-details {
+        flex-direction: column;
+    }
+
+    .emails, .social-media {
+        min-width: 100%;
+    }
+}
+
+/* Animations */
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+@keyframes fadeInUp {
+    0% { opacity: 0; transform: translateY(20px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideInLeft {
+    0% { transform: translateX(-100%); }
+    100% { transform: translateX(0); }
+}
+
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
